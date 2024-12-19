@@ -71,7 +71,7 @@ def login_view(request):
                 # If not attempting to login via admin panel, proceed with custom user authentication
                 #custom_user = CustomUser.objects.filter(username=username).first()
                 custom_user = CustomUser.objects.filter(Q(email=username) | Q(phoneno=username)).first()
-                  
+
                 if custom_user is not None and check_password(password, custom_user.password):
                     # Authenticate user from the CustomUser table
                     #user = authenticate(request, username=username, password=password, backend='user.backends.CustomUserBackend')
@@ -84,6 +84,7 @@ def login_view(request):
                     if custom_user is not None:
 
                         if custom_user.status != "active":
+                            print("account isincativate")
                             return Response({'Error': 'Your account is inactive. Please contact the administrator.'}, status=400)
                         
                         #login(request, custom_user)

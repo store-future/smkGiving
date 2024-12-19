@@ -2,7 +2,8 @@
 
 // export const FILE_BASE_URL ='http://20.197.14.90:8000/'
 
- export const FILE_BASE_URL ='https://api-loancharity.winlinetech.com/'
+//  export const FILE_BASE_URL ='https://api-loancharity.winline/tech.com/'
+ export const FILE_BASE_URL ='http://127.0.0.1:8000/'
 
 export const API_LOGIN = '/user/login/';
 export const API_CREATE_USER = '/user/create_user/';
