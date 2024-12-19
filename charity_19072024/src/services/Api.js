@@ -1,4 +1,5 @@
-const BASE_URL = "https://api-loancharity.winlinetech.com"; // Replace this with your API base URL
+//const BASE_URL = "https://api-loancharity.winlinetech.com"; // Replace this with your API base URL
+const BASE_URL = "http://127.0.0.1:8000"; // Replace this with your API base URL
 
 // const BASE_URL =  "http://loancharity.winlinetech.com"
 
